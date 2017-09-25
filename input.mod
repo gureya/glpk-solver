@@ -164,7 +164,7 @@ s.t. constraint5b{i in I}: sum{j in J: j != i} x[i,j] + beta * ld[i] <= alpha;
 s.t. constraint5a{i in I}: sum{j in J: j != i} x[i,j] + l[i] <= alpha;
 s.t. constraint3d{i in L, j in LD}: l[i] <= ld[j];
 
-s.t. constraint6 : sum{i in A} a[i] <= nthreads;
+#s.t. constraint6 : sum{i in A} a[i] <= nthreads;
 
 # display{i in BD}: i, bd[i];
 # display{i in Y}: y[i];
